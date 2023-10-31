@@ -18,11 +18,19 @@ def main():
     
     LibName = str(components_f.split(".")[0]) + ".kicad_sym"
     
+    if len(sys.argv) == 3:
+        template_f = sys.argv[2]
+    else:
+        template_f = 'Template.kicad_sym'
     
-    template_f = open('Template.kicad_sym', mode='rt', encoding='utf-8')
-    #components = open('Reistors.txt', mode='rt', encoding='utf-8')
-    template = template_f.read()
-    template_f.close()
+    try:
+        template_f = open(template_f, mode='rt', encoding='utf-8')
+        template = template_f.read()
+        template_f.close()
+    except:
+        print("Error reading template")
+        exit(1)
+        
     Comps = "\n\r"
     with open(components_f, mode='rt', encoding='utf-8') as components:
         
@@ -35,6 +43,9 @@ def main():
             Replacet = Replacet.replace("[VALUE]",columns[0].strip())
             Replacet = Replacet.replace("[DESC]",columns[5].strip())
             Replacet = Replacet.replace("[VOLTAGE]",columns[1].strip())
+            if len(columns) > 6:
+                Replacet = Replacet.replace("[MAT]",columns[6].strip())
+            Replacet = Replacet.replace("[SIZE]",columns[2].strip())
             Comps += Replacet + "\r\n"
             #print(Comps)
             
