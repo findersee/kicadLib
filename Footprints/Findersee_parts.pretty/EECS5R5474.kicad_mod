@@ -1,0 +1,45 @@
+(footprint "EECS5R5474" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 4a623a8b-962e-41a6-9a9a-a148e112597c)
+  )
+  (fp_text value "EECS5R5474" (at 0 1 unlocked) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 26ab8593-33b5-4735-8d26-0b14ae073dc2)
+  )
+  (fp_text user "+" (at 0.7 -7.1 unlocked) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
+    (tstamp 6a7edbd5-393a-4079-ace4-ecdd260773c9)
+  )
+  (fp_arc (start 1.3 -8.4) (mid 0 8.5) (end -1.3 -8.4)
+    (stroke (width 0.12) (type default)) (layer "F.SilkS") (tstamp 20d80c7c-985b-4e71-a4d1-abcf11c53138))
+  (fp_poly
+    (pts
+      (arc (start -8 2.8) (mid 0 8.401661) (end 8 2.8))
+    )
+
+    (stroke (width 0.12) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 07e46e6d-845f-4f73-9547-a42346eda453))
+  (fp_poly
+    (pts
+      (arc (start 2.999999 -8.5) (mid 1.59804 -9.320505) (end 0 -9.612029))
+      (arc (start 0 -9.612029) (mid -1.59804 -9.320505) (end -2.999999 -8.5))
+      (arc (start -2.999999 -8.499999) (mid -9.013391 -0.093593) (end -3.175857 8.43587))
+      (arc (start -3.175857 12) (mid -1.64446 12.638451) (end 0 12.858793))
+      (arc (start 0 12.858793) (mid 1.64446 12.638451) (end 3.175857 12))
+      (arc (start 3.175857 8.43587) (mid 9.013391 -0.093593) (end 2.999999 -8.499999))
+    )
+
+    (stroke (width 0.12) (type solid)) (fill none) (layer "F.CrtYd") (tstamp 59d0894a-c0aa-4d0f-9469-8b0b2eef3862))
+  (fp_circle (center 0 0) (end -8.5 0)
+    (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") (tstamp 7d3201b8-6c10-4a3e-ac69-ea7dc4c83a89))
+  (fp_poly
+    (pts
+      (arc (start -7.9 2.9) (mid 0 8.43164) (end 7.9 2.9))
+    )
+
+    (stroke (width 0.1) (type solid)) (fill solid) (layer "F.Fab") (tstamp abf467a3-fcb6-4ad4-835e-8987f2e20ea7))
+  (pad "1" thru_hole oval (at 0 -8.5) (size 1.6 2) (drill 1) (layers "*.Cu" "*.Mask") (tstamp ee124a33-c253-4f3b-b667-454621d0d2f2))
+  (pad "2" thru_hole oval (at 0 11.5) (size 1.6 2) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 657d1f86-aa72-4a08-865d-3a1047662ee5))
+)

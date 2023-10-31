@@ -1,0 +1,26 @@
+(footprint "0402_Jumper_3pin" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr smd)
+  (fp_text reference "REF**" (at 0.6 -1.1 unlocked) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 881a4d4f-b8a8-41a0-8526-44ad30eac81f)
+  )
+  (fp_text value "0402_Jumper_3pin" (at 0 1.2 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 0b637e86-05fa-4a48-83ca-1f041c2da5c4)
+  )
+  (fp_poly
+    (pts
+      (xy -0.5 -0.5)
+      (xy 1.7 -0.5)
+      (xy 1.7 0.5)
+      (xy 0.5 0.5)
+      (xy 0.5 1.7)
+      (xy -0.5 1.7)
+    )
+
+    (stroke (width 0.12) (type solid)) (fill none) (layer "F.CrtYd") (tstamp f9ec1469-338a-43ca-8d0b-d47915153685))
+  (pad "1" smd roundrect (at 1.2 0) (size 0.8 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 452a9d44-5eff-4ca3-919c-2addae345c59))
+  (pad "2" smd roundrect (at 0 0) (size 0.8 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 36032a82-1ec4-4d2d-87b3-f3a706f33b12))
+  (pad "3" smd roundrect (at 0 1.2) (size 0.8 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp b71571fc-23df-46bf-9df9-1669998ddd7d))
+)
